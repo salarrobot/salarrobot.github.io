@@ -1,14 +1,14 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-I'm Salar Mokhtari, a robotics developer and researcher passionate about intelligent systems, autonomous control, and human-robot interaction. My work lies at the intersection of robotics, artificial intelligence, and software engineering, where I explore how machines can learn, adapt, and work seamlessly with humans.
+I'm Salar Mokhtari, a researcher at the ERC Laboratory, National Taiwan Normal University (NTNU), specializing in Reinforcement Learning (RL), Deep Reinforcement Learning (Deep RL), and humanoid robotics.
 
-With a deep interest in Reinforcement Learning (RL) and Deep RL, especially in the context of humanoid robots, I combine theory with practice — building systems that move, learn, and think. Whether it's developing simulations, coding control algorithms, or writing research papers, I’m driven by curiosity and a desire to solve real-world problems.
+My research focuses on developing learning-based control systems that enable humanoid robots to perceive, adapt, and act intelligently in complex, dynamic environments. I’m particularly interested in how advanced RL algorithms can empower robots to perform human-like tasks — such as walking, balancing, object manipulation, and autonomous decision-making — with minimal hard-coded instructions.
 
-This site reflects my journey — the challenges I tackle, the ideas I explore, and the knowledge I aim to share along the way.
+At NTNU, I work at the intersection of robotics, machine learning, and embodied intelligence, striving to bridge theoretical advancements in Deep RL with practical implementations on real robotic platforms.
