@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/", // <-- MUST match your repo name
+  base: "/salarrobot.github.io/", // <-- MUST match your repo name
   
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
