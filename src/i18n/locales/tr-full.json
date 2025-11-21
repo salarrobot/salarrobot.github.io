@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "about": "Hakkımda",
+    "research": "Araştırma",
+    "education": "Eğitim",
+    "experience": "Deneyim",
+    "skills": "Yetenekler",
+    "projects": "Projeler",
+    "publications": "Yayınlar",
+    "certifications": "Sertifikalar",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Araştırmacı & Mühendis",
+    "description": "Ulusal Tayvan Normal Üniversitesi Elektrik Mühendisliği Yüksek Lisans öğrencisi, İnsansı Robotik için Pekiştirmeli Öğrenme ve Derin Pekiştirmeli Öğrenme konularında uzmanlaşmaktadır",
+    "contact": "İletişime Geç",
+    "cv": "CV İndir",
+    "learnMore": "Daha Fazla Bilgi",
+    "position": "Stajyer Öğrenci",
+    "institution": "Eğitim Robotiği Merkezi (ERC) – NTNU"
+  },
+  "about": {
+    "title": "Hakkımda",
+    "subtitle": "Yapay zeka, robotik ve insan-bilgisayar etkileşiminin kesişimini keşfeden tutkulu araştırmacı",
+    "backgroundTitle": "Geçmiş",
+    "backgroundText1": "Şu anda Ulusal Tayvan Normal Üniversitesi'nde Elektrik Mühendisliği alanında Yüksek Lisans yapmaktayım ve araştırmam İnsansı Robotikte Pekiştirmeli Öğrenme ve Derin Pekiştirmeli Öğrenme uygulamalarına odaklanmaktadır.",
+    "backgroundText2": "Tebriz Üniversitesi'nden Bilgisayar Mühendisliği alanında güçlü bir temele sahip olarak, makine öğrenimi, derin öğrenme ve pratik yapay zeka uygulamalarında kapsamlı deneyim geliştirdim.",
+    "currentWorkTitle": "Mevcut Çalışma",
+    "currentWorkText1": "NTNU'daki Eğitim Robotiği Merkezi'nde (ERC), insansı robotik alanını ilerletmek için NVIDIA Isaac Lab, Isaac Sim ve Proximal Policy Optimization (PPO) algoritmaları dahil olmak üzere en son teknolojilerle çalışıyorum.",
+    "currentWorkText2": "Araştırmam, teorik RL kavramları ile pratik robotik uygulamalar arasındaki boşluğu kapatmayı ve daha akıllı ve uyarlanabilir robotik sistemlere katkıda bulunmayı amaçlamaktadır.",
+    "highlights": {
+      "machineLearning": {
+        "title": "Makine Öğrenimi",
+        "description": "ML algoritmaları ve sinir ağları konusunda derin uzmanlık"
+      },
+      "robotics": {
+        "title": "Robotik",
+        "description": "İnsansı robotik ve RL uygulamalarında uzmanlaşmış"
+      },
+      "appliedAI": {
+        "title": "Uygulamalı Yapay Zeka",
+        "description": "Yapay zeka çözümlerinin pratik uygulamaları"
+      },
+      "hci": {
+        "title": "İİE Araştırması",
+        "description": "İnsan-bilgisayar etkileşimi ve AR teknolojileri"
+      }
+    }
+  },
+  "research": {
+    "title": "Araştırma İlgi Alanları",
+    "subtitle": "Temel araştırma konuları ve uzmanlık alanları",
+    "interests": {
+      "rlDeepRL": "Pekiştirmeli ve Derin Pekiştirmeli Öğrenme",
+      "robotics": "Robotik",
+      "slam": "SLAM",
+      "machineLearning": "Makine Öğrenimi",
+      "computerVision": "Bilgisayarlı Görü",
+      "llms": "Büyük Dil Modelleri",
+      "ros2": "ROS2"
+    }
+  },
+  "education": {
+    "title": "Eğitim",
+    "subtitle": "Akademik geçmiş ve nitelikler",
+    "supervisor": "Danışman",
+    "thesis": "Tez",
+    "gpa": "Not Ortalaması",
+    "degrees": {
+      "masters": {
+        "degree": "Elektrik Mühendisliği Yüksek Lisans",
+        "institution": "Ulusal Tayvan Normal Üniversitesi",
+        "location": "Taipei, Tayvan",
+        "period": "2025 - Devam Ediyor",
+        "gpa": "3.43 (İlk Dönem)",
+        "thesis": "İnsansı Robotikte Pekiştirmeli ve Derin Pekiştirmeli Öğrenme",
+        "supervisor": "Dr. Saeed Saeedvand",
+        "description": "İnsansı robotik sistemlere uygulanan gelişmiş pekiştirmeli öğrenme tekniklerine odaklanma"
+      },
+      "bachelors": {
+        "degree": "Bilgisayar Mühendisliği Lisans",
+        "institution": "Tebriz Üniversitesi",
+        "location": "Tebriz, İran",
+        "period": "2018 - 2023",
+        "gpa": "15.02/20",
+        "description": "Bilgisayar bilimi, algoritmalar ve yazılım mühendisliğinde kapsamlı temel"
+      }
+    }
+  },
+  "experience": {
+    "title": "Deneyim",
+    "subtitle": "Profesyonel araştırma ve akademik deneyim",
+    "present": "Günümüz",
+    "employmentType": "Yarı Zamanlı",
+    "highlights": "Önemli Noktalar",
+    "courses": "Dersler",
+    "lecturer": "Öğretim Görevlisi",
+    "experiences": {
+      "erc": {
+        "title": "Stajyer Öğrenci",
+        "organization": "Eğitim Robotiği Merkezi (ERC) – NTNU",
+        "location": "Taipei, Tayvan",
+        "period": "Ağustos 2024 – Ocak 2025",
+        "description": "İnsansı Robotikte Pekiştirmeli ve Derin Pekiştirmeli Öğrenme Araştırması",
+        "highlights": [
+          "İnsansı robotlar için pekiştirmeli öğrenme üzerine araştırma yaptı",
+          "Isaac Lab ve Isaac Sim'de PPO algoritmaları uyguladı",
+          "Son teknoloji robotik projeleri üzerinde araştırma ekibiyle işbirliği yaptı"
+        ]
+      },
+      "sobh": {
+        "title": "Yapay Zeka Araştırmacısı",
+        "organization": "Sobh Parlar Asia Industrial Co.",
+        "location": "Tebriz, Doğu Azerbaycan, İran",
+        "period": "Ağustos 2022 – Ekim 2022",
+        "duration": "3 ay",
+        "description": "Yapay zeka alanında AOI (Otomatik Optik Muayene) üzerinde çalışma",
+        "highlights": [
+          "PCB üretimi için yapay zeka destekli otomatik optik muayene sistemi geliştirdi",
+          "Elektronik bileşen muayenesi için bilgisayarlı görü modelleri uyguladı",
+          "Devre lehim kalitesi muayenesi için derin öğrenme çözümü oluşturdu",
+          "Hem ön hem de arka kart muayenesi için NLP ve bilgisayarlı görü tekniklerini uyguladı"
+        ]
+      },
+      "ta": {
+        "title": "Öğretim Asistanı",
+        "organization": "Tebriz Üniversitesi",
+        "location": "Tebriz, İran",
+        "period": "Çoklu Dönemler (2021 - 2023)",
+        "courses": [
+          {
+            "name": "Mühendislik Olasılık ve İstatistik",
+            "period": "Eylül 2023 – Aralık 2023",
+            "lecturer": "Dr. Seyed Amir Mortazavi"
+          },
+          {
+            "name": "Yazılım Mühendisliği I",
+            "period": "Eylül 2023 – Aralık 2023",
+            "lecturer": "Dr. Leili Farzinvash"
+          },
+          {
+            "name": "Algoritma Tasarımı",
+            "period": "Şubat 2023 – Haziran 2023",
+            "lecturer": "Dr. Pedram Salehpour"
+          },
+          {
+            "name": "Doğrusal Cebir ve Uygulamaları",
+            "period": "Nisan 2021 – Eylül 2022",
+            "lecturer": "Dr. Seyed Amir Mortazavi"
+          },
+          {
+            "name": "Ayrık Matematik",
+            "period": "Ocak 2021 – Mayıs 2022",
+            "lecturer": "Dr. Seyed Amir Mortazavi"
+          }
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Yetenekler",
+    "subtitle": "Teknik uzmanlık ve yetkinlikler",
+    "languages": "Diller",
+    "testScores": "Test Puanları",
+    "proficiency": {
+      "native": "Ana Dil",
+      "professional": "Profesyonel",
+      "intermediate": "Orta Seviye"
+    },
+    "categories": {
+      "aiML": "Yapay Zeka ve Makine Öğrenimi",
+      "programming": "Programlama",
+      "frameworks": "Framework'ler ve Araçlar",
+      "dataScience": "Veri Bilimi"
+    }
+  },
+  "projects": {
+    "title": "Projeler",
+    "subtitle": "GitHub'dan açık kaynak katkıları ve kişisel projeler",
+    "loading": "Projeler yükleniyor...",
+    "updated": "Güncellendi",
+    "technologies": "Teknolojiler",
+    "viewRepo": "Depoyu Görüntüle",
+    "liveDemo": "Canlı Demo",
+    "viewMore": "GitHub'da Daha Fazla Görüntüle"
+  },
+  "publications": {
+    "title": "Yayınlar ve Konuşmalar",
+    "subtitle": "Araştırma katkıları, akademik makaleler ve sunumlar",
+    "viewPaper": "Makaleyi Görüntüle",
+    "viewEvent": "Etkinliği Görüntüle"
+  },
+  "certifications": {
+    "title": "Sertifikalar ve Başarılar",
+    "subtitle": "Profesyonel sertifikalar ve sürekli öğrenme",
+    "professionalCerts": "Profesyonel Sertifikalar"
+  },
+  "contact": {
+    "title": "İletişime Geçin",
+    "subtitle": "Araştırma fırsatları, işbirlikleri veya ilginç projeler hakkında konuşmaya her zaman açığım",
+    "info": "İletişim Bilgileri",
+    "connect": "Benimle Bağlantı Kurun",
+    "email": "E-posta",
+    "phone": "Telefon",
+    "location": "Konum",
+    "linkedinProfile": "LinkedIn Profili",
+    "githubProfile": "GitHub Profili",
+    "researchInterests": "Araştırma İlgi Alanları",
+    "researchText": "Makine Öğrenimi, Pekiştirmeli Öğrenme, Robotik veya araştırma alanlarımdan herhangi biriyle ilgili projelerde işbirliği yapmakla ilgileniyorsanız lütfen iletişime geçin."
+  }
+}

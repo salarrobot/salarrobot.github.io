@@ -1,0 +1,211 @@
+{
+  "nav": {
+    "about": "About",
+    "research": "Research",
+    "education": "Education",
+    "experience": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "publications": "Publications",
+    "certifications": "Certifications",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Researcher & Engineer",
+    "description": "M.Sc. Student in Electrical Engineering at National Taiwan Normal University, specializing in Reinforcement Learning and Deep Reinforcement Learning for Humanoid Robotics",
+    "contact": "Get in Touch",
+    "cv": "Download CV",
+    "learnMore": "Learn More",
+    "position": "Internship Student",
+    "institution": "Educational Robotics Center (ERC) – NTNU"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passionate researcher exploring the intersection of AI, robotics, and human-computer interaction",
+    "backgroundTitle": "Background",
+    "backgroundText1": "I am currently pursuing my M.Sc. in Electrical Engineering at National Taiwan Normal University, where my research focuses on Reinforcement Learning and Deep Reinforcement Learning applications in Humanoid Robotics.",
+    "backgroundText2": "With a strong foundation in Computer Engineering from the University of Tabriz, I have developed extensive experience in machine learning, deep learning, and practical AI implementations.",
+    "currentWorkTitle": "Current Work",
+    "currentWorkText1": "At the Educational Robotics Center (ERC) at NTNU, I work with cutting-edge technologies including NVIDIA Isaac Lab, Isaac Sim, and Proximal Policy Optimization (PPO) algorithms to advance the field of humanoid robotics.",
+    "currentWorkText2": "My research aims to bridge the gap between theoretical RL concepts and practical robotic applications, contributing to more intelligent and adaptive robotic systems.",
+    "highlights": {
+      "machineLearning": {
+        "title": "Machine Learning",
+        "description": "Deep expertise in ML algorithms and neural networks"
+      },
+      "robotics": {
+        "title": "Robotics",
+        "description": "Specialized in humanoid robotics and RL applications"
+      },
+      "appliedAI": {
+        "title": "Applied AI",
+        "description": "Practical implementations of AI solutions"
+      },
+      "hci": {
+        "title": "HCI Research",
+        "description": "Human-computer interaction and AR technologies"
+      }
+    }
+  },
+  "research": {
+    "title": "Research Interests",
+    "subtitle": "Core research topics and areas of expertise",
+    "interests": {
+      "rlDeepRL": "RL and Deep RL",
+      "robotics": "Robotics",
+      "slam": "SLAM",
+      "machineLearning": "Machine Learning",
+      "computerVision": "Computer Vision",
+      "llms": "LLMs",
+      "ros2": "ROS2"
+    }
+  },
+  "education": {
+    "title": "Education",
+    "subtitle": "Academic background and qualifications",
+    "supervisor": "Supervisor",
+    "thesis": "Thesis",
+    "gpa": "GPA",
+    "degrees": {
+      "masters": {
+        "degree": "M.Sc. in Electrical Engineering",
+        "institution": "National Taiwan Normal University",
+        "location": "Taipei, Taiwan",
+        "period": "2025 - Present",
+        "gpa": "3.43 (First Semester)",
+        "thesis": "RL and Deep RL on Humanoid Robotics",
+        "supervisor": "Dr. Saeed Saeedvand",
+        "description": "Focusing on advanced reinforcement learning techniques applied to humanoid robotics systems"
+      },
+      "bachelors": {
+        "degree": "B.Sc. in Computer Engineering",
+        "institution": "University of Tabriz",
+        "location": "Tabriz, Iran",
+        "period": "2018 - 2023",
+        "gpa": "15.02/20",
+        "description": "Comprehensive foundation in computer science, algorithms, and software engineering"
+      }
+    }
+  },
+  "experience": {
+    "title": "Experience",
+    "subtitle": "Professional research and academic experience",
+    "present": "Present",
+    "employmentType": "Part-time",
+    "highlights": "Highlights",
+    "courses": "Courses",
+    "lecturer": "Lecturer",
+    "experiences": {
+      "erc": {
+        "title": "Internship Student",
+        "organization": "Educational Robotics Center (ERC) – NTNU",
+        "location": "Taipei, Taiwan",
+        "period": "August 2024 – January 2025",
+        "description": "Research at RL and Deep RL Humanoid Robotics",
+        "highlights": [
+          "Conducted research on reinforcement learning for humanoid robots",
+          "Implemented PPO algorithms in Isaac Lab and Isaac Sim",
+          "Collaborated with research team on cutting-edge robotics projects"
+        ]
+      },
+      "sobh": {
+        "title": "Artificial Intelligence Researcher",
+        "organization": "Sobh Parlar Asia Industrial Co.",
+        "location": "Tabriz, East Azerbaijan Province, Iran",
+        "period": "August 2022 – October 2022",
+        "duration": "3 months",
+        "description": "Working on AOI (Automated Optical Inspection) in the field of artificial intelligence",
+        "highlights": [
+          "Developed AI-powered automated optical inspection system for PCB manufacturing",
+          "Implemented computer vision models for electronic component inspection",
+          "Created deep learning solution for circuit solder quality inspection",
+          "Applied NLP and computer vision techniques for both front and back board inspection"
+        ]
+      },
+      "ta": {
+        "title": "Teaching Assistant",
+        "organization": "University of Tabriz",
+        "location": "Tabriz, Iran",
+        "period": "Multiple Terms (2021 - 2023)",
+        "courses": [
+          {
+            "name": "Engineering Probability and Statistics",
+            "period": "Sep 2023 – Dec 2023",
+            "lecturer": "Dr. Seyed Amir Mortazavi"
+          },
+          {
+            "name": "Software Engineer I",
+            "period": "Sep 2023 – Dec 2023",
+            "lecturer": "Dr. Leili Farzinvash"
+          },
+          {
+            "name": "Algorithm Design",
+            "period": "Feb 2023 – Jun 2023",
+            "lecturer": "Dr. Pedram Salehpour"
+          },
+          {
+            "name": "Linear Algebra and its Application",
+            "period": "Apr 2021 – Sep 2022",
+            "lecturer": "Dr. Seyed Amir Mortazavi"
+          },
+          {
+            "name": "Discrete Mathematics",
+            "period": "Jan 2021 – May 2022",
+            "lecturer": "Dr. Seyed Amir Mortazavi"
+          }
+        ]
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "Technical expertise and competencies",
+    "languages": "Languages",
+    "testScores": "Test Scores",
+    "proficiency": {
+      "native": "Native",
+      "professional": "Professional",
+      "intermediate": "Intermediate"
+    },
+    "categories": {
+      "aiML": "AI & Machine Learning",
+      "programming": "Programming",
+      "frameworks": "Frameworks & Tools",
+      "dataScience": "Data Science"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Open source contributions and personal projects from GitHub",
+    "loading": "Loading projects...",
+    "updated": "Updated",
+    "technologies": "Technologies",
+    "viewRepo": "View Repository",
+    "liveDemo": "Live Demo",
+    "viewMore": "View More on GitHub"
+  },
+  "publications": {
+    "title": "Publications & Talks",
+    "subtitle": "Research contributions, academic papers, and presentations",
+    "viewPaper": "View Paper",
+    "viewEvent": "View Event"
+  },
+  "certifications": {
+    "title": "Certifications & Achievements",
+    "subtitle": "Professional certifications and continuous learning",
+    "professionalCerts": "Professional Certifications"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "I'm always open to discussing research opportunities, collaborations, or interesting projects",
+    "info": "Contact Information",
+    "connect": "Connect with Me",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "linkedinProfile": "LinkedIn Profile",
+    "githubProfile": "GitHub Profile",
+    "researchInterests": "Research Interests",
+    "researchText": "Feel free to reach out if you're interested in collaborating on projects related to Machine Learning, Reinforcement Learning, Robotics, or any of my research areas."
+  }
+}
