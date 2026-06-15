@@ -22,22 +22,14 @@ export default function About() {
           </a>
 
           <h3 className="about__card-title about__card-title--block">{t.about.interestsTitle}</h3>
-          <table className="interests-table">
-            <thead>
-              <tr>
-                <th className="interests-table__idx">#</th>
-                <th>{t.about.interestsCols.area}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {t.about.interests.map((area, i) => (
-                <tr key={area}>
-                  <td className="interests-table__idx">{String(i + 1).padStart(2, '0')}</td>
-                  <td className="interests-table__area">{area}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div className="interests-grid">
+            {t.about.interests.map((area, i) => (
+              <div className="interests-grid__item" key={area}>
+                <span className="interests-grid__idx">{String(i + 1).padStart(2, '0')}</span>
+                <span className="interests-grid__area">{area}</span>
+              </div>
+            ))}
+          </div>
 
           <div className="about__grid">
             <div className="card about__card">

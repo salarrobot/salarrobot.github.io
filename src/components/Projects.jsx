@@ -149,10 +149,13 @@ export default function Projects() {
         <table className="more-table">
           <tbody>
             {t.projects.more.map((p, i) => (
-              <tr key={p}>
+              <tr key={p.name}>
                 <td className="more-table__idx">{String(i + 1).padStart(2, '0')}</td>
-                <td className="more-table__name">{p}</td>
-                <td className="more-table__tag">Project</td>
+                <td className="more-table__name">
+                  <span className="more-table__title">{p.name}</span>
+                  <span className="more-table__desc">{p.desc}</span>
+                </td>
+                <td className="more-table__tag">{p.tech}</td>
               </tr>
             ))}
           </tbody>

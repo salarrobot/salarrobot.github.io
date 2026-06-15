@@ -50,6 +50,12 @@ export default function Experience() {
                 <p className="teaching__lecturer">
                   {t.experience.lecturerLabel}: {ta.lecturer}
                 </p>
+                {ta.desc && <p className="teaching__desc">{ta.desc}</p>}
+                {ta.location && (
+                  <p className="teaching__meta">
+                    <MapPinIcon /> {ta.location}
+                  </p>
+                )}
               </div>
               <span className="teaching__period">
                 <CalendarIcon /> {ta.period}

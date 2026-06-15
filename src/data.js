@@ -4,6 +4,7 @@ export const GITHUB_API = `https://api.github.com/users/${GITHUB_USER}/repos?sor
 export const GITHUB_URL_2 = 'https://github.com/salarMokhtariL';
 export const LINKEDIN_URL = 'https://www.linkedin.com/in/salar-mokhtari-laleh-22508b91/';
 export const ERC_URL = 'https://www.ntnuerc.com/current/current';
+export const CV_URL = '/Salar_Mokhtari_Laleh_CV.pdf';
 export const EMAIL = 'Salarmokhtari0@gmail.com';
 
 export const LANGUAGE_COLORS = {

@@ -574,6 +574,16 @@ a {
   box-shadow: 5px 5px 0 var(--paper);
 }
 
+.btn--cv {
+  background: var(--signal);
+  color: #fff;
+  border-color: var(--signal);
+}
+
+.btn--cv:hover {
+  box-shadow: var(--shadow-offset);
+}
+
 /* ---------- Sections ---------- */
 .section {
   padding: 100px 0;
@@ -787,12 +797,57 @@ a {
   font-size: 0.72rem;
 }
 
-/* Research interests table */
+/* Research interests grid — 3 per column, 2 columns */
 .about__card-title--block {
   display: flex;
   align-items: center;
   gap: 8px;
   margin: 8px 0 16px;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-auto-flow: column;
+  border: 1.5px solid var(--ink);
+  background: var(--paper-pure);
+  margin-bottom: 36px;
+}
+
+.interests-grid__item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--gray-200);
+  transition: background 0.18s;
+}
+
+.interests-grid__item:nth-child(-n + 3) {
+  border-right: 1.5px solid var(--ink);
+}
+
+.interests-grid__item:nth-child(3),
+.interests-grid__item:nth-child(6) {
+  border-bottom: 0;
+}
+
+.interests-grid__item:hover {
+  background: rgba(193, 39, 45, 0.07);
+}
+
+.interests-grid__idx {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--signal);
+}
+
+.interests-grid__area {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.02rem;
 }
 
 .interests-table {
@@ -1015,7 +1070,7 @@ a {
 .teaching__row {
   display: grid;
   grid-template-columns: 66px 1fr auto;
-  align-items: center;
+  align-items: flex-start;
   gap: 24px;
   padding: 22px 30px;
   transition: background 0.25s, color 0.25s;
@@ -1063,6 +1118,40 @@ a {
 }
 
 .teaching__row:hover .teaching__lecturer {
+  color: var(--gray-300);
+}
+
+.teaching__desc {
+  color: var(--gray-600);
+  font-size: 0.88rem;
+  margin-top: 8px;
+  max-width: 60ch;
+  transition: color 0.25s;
+}
+
+.teaching__row:hover .teaching__desc {
+  color: var(--gray-300);
+}
+
+.teaching__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: var(--gray-500);
+  transition: color 0.25s;
+}
+
+.teaching__meta svg {
+  width: 13px;
+  height: 13px;
+  color: var(--signal);
+}
+
+.teaching__row:hover .teaching__meta {
   color: var(--gray-300);
 }
 
@@ -1458,8 +1547,8 @@ a {
 }
 
 .more-table td {
-  padding: 14px 18px;
-  vertical-align: middle;
+  padding: 16px 18px;
+  vertical-align: top;
 }
 
 .more-table__idx {
@@ -1469,23 +1558,34 @@ a {
   color: var(--signal);
 }
 
-.more-table__name {
+.more-table__title {
+  display: block;
   font-family: var(--font-head);
   font-weight: 600;
   font-size: 1.02rem;
   line-height: 1.4;
 }
 
+.more-table__desc {
+  display: block;
+  margin-top: 4px;
+  color: var(--gray-600);
+  font-size: 0.85rem;
+}
+
 .more-table__tag {
-  width: 90px;
+  width: 120px;
   text-align: right;
+  white-space: nowrap;
+}
+
+.more-table__tag {
   font-family: var(--font-mono);
   font-size: 0.6rem;
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--gray-500);
-  white-space: nowrap;
+  letter-spacing: 0.08em;
+  color: var(--signal);
 }
 
 /* ---------- Posts / Insights ---------- */
@@ -2249,6 +2349,23 @@ a.contact__card:hover::before {
   .teaching__period {
     grid-column: 2;
     justify-self: start;
+  }
+
+  .interests-grid {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .interests-grid__item:nth-child(-n + 3) {
+    border-right: 0;
+  }
+
+  .interests-grid__item:nth-child(3) {
+    border-bottom: 1px solid var(--gray-200);
+  }
+
+  .interests-grid__item:last-child {
+    border-bottom: 0;
   }
 
   .pub__card,

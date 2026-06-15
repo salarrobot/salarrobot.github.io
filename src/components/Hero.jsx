@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext.jsx';
-import { EMAIL, GITHUB_URL, LINKEDIN_URL } from '../data.js';
+import { EMAIL, GITHUB_URL, LINKEDIN_URL, CV_URL } from '../data.js';
 import {
   MailIcon,
   GitHubIcon,
@@ -8,6 +8,7 @@ import {
   NetworkIcon,
   GamepadIcon,
   CpuIcon,
+  DownloadIcon,
 } from './Icons.jsx';
 
 const TICKER_KEYWORDS = [
@@ -54,6 +55,9 @@ export default function Hero() {
             </a>
             <a className="btn btn--outline" href={LINKEDIN_URL} target="_blank" rel="noreferrer">
               <LinkedInIcon /> {t.hero.linkedinBtn}
+            </a>
+            <a className="btn btn--cv" href={CV_URL} download>
+              <DownloadIcon /> {t.hero.downloadBtn}
             </a>
           </div>
         </div>
