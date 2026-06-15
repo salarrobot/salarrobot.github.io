@@ -146,13 +146,17 @@ export default function Projects() {
         )}
 
         <h3 className="section__subtitle section__subtitle--spaced">{t.projects.moreTitle}</h3>
-        <div className="chips chips--lg">
-          {t.projects.more.map((p) => (
-            <span className="chip chip--outline" key={p}>
-              {p}
-            </span>
-          ))}
-        </div>
+        <table className="more-table">
+          <tbody>
+            {t.projects.more.map((p, i) => (
+              <tr key={p}>
+                <td className="more-table__idx">{String(i + 1).padStart(2, '0')}</td>
+                <td className="more-table__name">{p}</td>
+                <td className="more-table__tag">Project</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
         <a className="btn btn--dark projects__explore" href={GITHUB_URL_2} target="_blank" rel="noreferrer">
           <GitHubIcon /> {t.projects.exploreMore} <ArrowRightIcon />
         </a>

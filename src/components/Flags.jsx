@@ -2,16 +2,14 @@
 // country-flag emoji). 3:2 ratio, ~20px wide in chips.
 
 const wrap = {
-  width: 22,
-  height: 15,
   display: 'inline-block',
   flexShrink: 0,
   borderRadius: 2,
   boxShadow: '0 0 0 1px rgba(0,0,0,0.15)',
 };
 
-export const UsFlag = (props) => (
-  <svg viewBox="0 0 30 20" style={wrap} {...props}>
+export const UsFlag = ({ style, ...props }) => (
+  <svg viewBox="0 0 30 20" width="22" height="15" style={{ ...wrap, ...style }} {...props}>
     <rect width="30" height="20" fill="#fff" />
     {[0, 2, 4, 6, 8, 10, 12].map((i) => (
       <rect key={i} y={(i * 20) / 13} width="30" height={20 / 13} fill="#b22234" />
@@ -25,8 +23,8 @@ export const UsFlag = (props) => (
   </svg>
 );
 
-export const AzFlag = (props) => (
-  <svg viewBox="0 0 30 20" style={wrap} {...props}>
+export const AzFlag = ({ style, ...props }) => (
+  <svg viewBox="0 0 30 20" width="22" height="15" style={{ ...wrap, ...style }} {...props}>
     <rect width="30" height="20" fill="#3f9c35" />
     <rect width="30" height={20 / 3} fill="#0092bc" />
     <rect y={20 / 3} width="30" height={20 / 3} fill="#ef3340" />
@@ -39,8 +37,8 @@ export const AzFlag = (props) => (
   </svg>
 );
 
-export const TrFlag = (props) => (
-  <svg viewBox="0 0 30 20" style={wrap} {...props}>
+export const TrFlag = ({ style, ...props }) => (
+  <svg viewBox="0 0 30 20" width="22" height="15" style={{ ...wrap, ...style }} {...props}>
     <rect width="30" height="20" fill="#e30a17" />
     <circle cx="12" cy="10" r="4.2" fill="#fff" />
     <circle cx="13.4" cy="10" r="3.3" fill="#e30a17" />
@@ -53,8 +51,8 @@ export const TrFlag = (props) => (
 
 // Iran — historical Lion and Sun flag: green/white/red tricolour with a
 // golden sun (disc + rays) and a simplified lion over the centre stripe.
-export const IrLionSunFlag = (props) => (
-  <svg viewBox="0 0 30 20" style={wrap} {...props}>
+export const IrLionSunFlag = ({ style, ...props }) => (
+  <svg viewBox="0 0 30 20" width="22" height="15" style={{ ...wrap, ...style }} {...props}>
     <rect width="30" height="20" fill="#fff" />
     <rect width="30" height={20 / 3} fill="#239f40" />
     <rect y={(2 * 20) / 3} width="30" height={20 / 3} fill="#da0000" />

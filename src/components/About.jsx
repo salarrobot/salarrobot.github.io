@@ -27,15 +27,13 @@ export default function About() {
               <tr>
                 <th className="interests-table__idx">#</th>
                 <th>{t.about.interestsCols.area}</th>
-                <th>{t.about.interestsCols.focus}</th>
               </tr>
             </thead>
             <tbody>
-              {t.about.interests.map((it, i) => (
-                <tr key={it.area}>
+              {t.about.interests.map((area, i) => (
+                <tr key={area}>
                   <td className="interests-table__idx">{String(i + 1).padStart(2, '0')}</td>
-                  <td className="interests-table__area">{it.area}</td>
-                  <td className="interests-table__focus">{it.focus}</td>
+                  <td className="interests-table__area">{area}</td>
                 </tr>
               ))}
             </tbody>

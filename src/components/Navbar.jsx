@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext.jsx';
 import { MenuIcon, CloseIcon } from './Icons.jsx';
+import { UsFlag, TrFlag } from './Flags.jsx';
 
 const SECTION_IDS = [
   'home',
@@ -71,13 +72,13 @@ export default function Navbar() {
               className={lang === 'en' ? 'lang-switch__btn lang-switch__btn--active' : 'lang-switch__btn'}
               onClick={() => setLang('en')}
             >
-              EN
+              <UsFlag width={18} height={12} /> EN
             </button>
             <button
               className={lang === 'tr' ? 'lang-switch__btn lang-switch__btn--active' : 'lang-switch__btn'}
               onClick={() => setLang('tr')}
             >
-              TR
+              <TrFlag width={18} height={12} /> TR
             </button>
           </div>
         </nav>
@@ -89,14 +90,14 @@ export default function Navbar() {
               onClick={() => setLang('en')}
               aria-label="English"
             >
-              EN
+              <UsFlag width={18} height={12} /> EN
             </button>
             <button
               className={lang === 'tr' ? 'lang-switch__btn lang-switch__btn--active' : 'lang-switch__btn'}
               onClick={() => setLang('tr')}
               aria-label="Türkçe"
             >
-              TR
+              <TrFlag width={18} height={12} /> TR
             </button>
           </div>
           <button

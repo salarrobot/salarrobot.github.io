@@ -192,6 +192,9 @@ a {
 }
 
 .lang-switch__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   border: 0;
   background: transparent;
   font-family: var(--font-mono);
@@ -199,9 +202,19 @@ a {
   font-size: 0.72rem;
   letter-spacing: 0.06em;
   color: var(--gray-500);
-  padding: 7px 13px;
+  padding: 6px 11px;
   cursor: pointer;
   transition: all 0.2s;
+}
+
+.lang-switch__btn svg {
+  border-radius: 2px;
+  opacity: 0.55;
+  transition: opacity 0.2s;
+}
+
+.lang-switch__btn--active svg {
+  opacity: 1;
 }
 
 .lang-switch__btn--active {
@@ -326,6 +339,8 @@ a {
   color: var(--gray-600);
   max-width: 540px;
   font-size: 1.04rem;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 .hero__actions {
@@ -1418,7 +1433,59 @@ a {
 }
 
 .projects__explore {
-  margin-top: 22px;
+  margin-top: 4px;
+}
+
+/* More research & course projects table */
+.more-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1.5px solid var(--ink);
+  background: var(--paper-pure);
+  margin-bottom: 22px;
+}
+
+.more-table tbody tr + tr {
+  border-top: 1px solid var(--gray-200);
+}
+
+.more-table tbody tr {
+  transition: background 0.18s;
+}
+
+.more-table tbody tr:hover {
+  background: rgba(193, 39, 45, 0.07);
+}
+
+.more-table td {
+  padding: 14px 18px;
+  vertical-align: middle;
+}
+
+.more-table__idx {
+  width: 52px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--signal);
+}
+
+.more-table__name {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.4;
+}
+
+.more-table__tag {
+  width: 90px;
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-500);
+  white-space: nowrap;
 }
 
 /* ---------- Posts / Insights ---------- */
@@ -2118,6 +2185,7 @@ a.contact__card:hover::before {
 
   .hero__subtitle {
     margin: 0 auto;
+    text-align: center;
   }
 
   .about__grid {
