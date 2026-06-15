@@ -13,6 +13,7 @@ import References from './components/References.jsx';
 import Internship from './components/Internship.jsx';
 import Contact from './components/Contact.jsx';
 import Footer from './components/Footer.jsx';
+import ScrollTop from './components/ScrollTop.jsx';
 
 export default function App() {
   useEffect(() => {
@@ -52,6 +53,7 @@ export default function App() {
         <Contact />
       </main>
       <Footer />
+      <ScrollTop />
     </>
   );
 }

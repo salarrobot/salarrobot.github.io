@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext.jsx';
-import { BriefcaseIcon, BookOpenIcon, MapPinIcon } from './Icons.jsx';
+import { BriefcaseIcon, BookOpenIcon, MapPinIcon, ChalkboardIcon, CalendarIcon } from './Icons.jsx';
 
 export default function Experience() {
   const { t } = useLanguage();
@@ -40,16 +40,20 @@ export default function Experience() {
           <BookOpenIcon /> {t.experience.teachingOrg}
         </p>
         <div className="teaching__list">
-          {t.experience.teaching.map((ta, i) => (
+          {t.experience.teaching.map((ta) => (
             <div className="teaching__row" key={ta.course}>
-              <span className="teaching__num">{String(i + 1).padStart(2, '0')}</span>
+              <span className="teaching__icon">
+                <ChalkboardIcon />
+              </span>
               <div className="teaching__info">
                 <h4 className="teaching__course">{ta.course}</h4>
                 <p className="teaching__lecturer">
                   {t.experience.lecturerLabel}: {ta.lecturer}
                 </p>
               </div>
-              <span className="teaching__period">{ta.period}</span>
+              <span className="teaching__period">
+                <CalendarIcon /> {ta.period}
+              </span>
             </div>
           ))}
         </div>

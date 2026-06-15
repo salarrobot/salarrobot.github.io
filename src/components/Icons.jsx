@@ -161,6 +161,32 @@ export const CpuIcon = (props) => (
   </svg>
 );
 
+export const ChalkboardIcon = (props) => (
+  <svg viewBox="0 0 24 24" width="20" height="20" {...base} {...props}>
+    <rect x="3" y="3" width="18" height="13" rx="1.5" />
+    <path d="M7 8h6M7 11h9" />
+    <path d="M12 16v3M9 21h6" />
+  </svg>
+);
+
+export const ArrowUpIcon = (props) => (
+  <svg viewBox="0 0 24 24" width="20" height="20" {...base} {...props}>
+    <path d="M12 19V5M5 12l7-7 7 7" />
+  </svg>
+);
+
+export const ArrowRightIcon = (props) => (
+  <svg viewBox="0 0 24 24" width="16" height="16" {...base} {...props}>
+    <path d="M5 12h14M13 6l6 6-6 6" />
+  </svg>
+);
+
+export const PlusIcon = (props) => (
+  <svg viewBox="0 0 24 24" width="16" height="16" {...base} {...props}>
+    <path d="M12 5v14M5 12h14" />
+  </svg>
+);
+
 export const MenuIcon = (props) => (
   <svg viewBox="0 0 24 24" width="24" height="24" {...base} {...props}>
     <path d="M4 6h16M4 12h16M4 18h16" />

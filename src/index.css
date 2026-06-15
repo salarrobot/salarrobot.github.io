@@ -706,11 +706,15 @@ a {
 
 /* ---------- About ---------- */
 .about__bio {
-  max-width: 760px;
+  max-width: none;
+  width: 100%;
   color: var(--gray-600);
   font-size: 1.14rem;
   line-height: 1.85;
-  margin-bottom: 40px;
+  margin-bottom: 22px;
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
 }
 
 .about__bio::first-letter {
@@ -722,6 +726,118 @@ a {
   padding-right: 12px;
   padding-top: 6px;
   color: var(--signal);
+}
+
+/* ERC affiliation link */
+.about__erc {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  text-decoration: none;
+  color: var(--ink);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+  background: var(--paper-pure);
+  border: 1.5px solid var(--ink);
+  border-left: 5px solid var(--signal);
+  padding: 12px 18px;
+  margin-bottom: 40px;
+  transition: transform 0.16s, box-shadow 0.2s;
+}
+
+.about__erc:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--signal);
+}
+
+.about__erc-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--signal);
+  flex-shrink: 0;
+  animation: pulse 2s infinite;
+}
+
+.about__erc-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 700;
+  color: var(--signal);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+}
+
+/* Research interests table */
+.about__card-title--block {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0 16px;
+}
+
+.interests-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1.5px solid var(--ink);
+  background: var(--paper-pure);
+  margin-bottom: 36px;
+  font-size: 0.95rem;
+}
+
+.interests-table thead th {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-align: left;
+  padding: 11px 18px;
+}
+
+.interests-table tbody tr {
+  border-top: 1px solid var(--gray-200);
+  transition: background 0.18s;
+}
+
+.interests-table tbody tr:hover {
+  background: var(--paper-alt);
+}
+
+.interests-table td {
+  padding: 14px 18px;
+  vertical-align: middle;
+}
+
+.interests-table__idx {
+  width: 52px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--signal);
+}
+
+.interests-table__area {
+  font-family: var(--font-head);
+  font-weight: 600;
+  font-size: 1.02rem;
+  white-space: nowrap;
+}
+
+.interests-table__focus {
+  color: var(--gray-600);
+  font-size: 0.9rem;
+}
+
+/* flag chips */
+.chip--flag {
+  gap: 8px;
+  padding-left: 9px;
 }
 
 .about__grid {
@@ -899,11 +1015,21 @@ a {
   color: var(--paper);
 }
 
-.teaching__num {
-  font-family: var(--font-mono);
-  font-size: 1.25rem;
-  font-weight: 700;
+.teaching__icon {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid var(--ink);
   color: var(--signal);
+  background: var(--paper-pure);
+  flex-shrink: 0;
+  transition: border-color 0.25s;
+}
+
+.teaching__row:hover .teaching__icon {
+  border-color: rgba(244, 241, 234, 0.45);
 }
 
 .teaching__course {
@@ -926,6 +1052,9 @@ a {
 }
 
 .teaching__period {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
   font-family: var(--font-mono);
   font-size: 0.68rem;
   font-weight: 600;
@@ -935,6 +1064,11 @@ a {
   padding: 6px 13px;
   border: 1.5px solid currentColor;
   transition: color 0.25s;
+}
+
+.teaching__period svg {
+  width: 13px;
+  height: 13px;
 }
 
 /* ---------- Projects ---------- */
@@ -1035,6 +1169,7 @@ a {
   color: var(--gray-600);
   font-size: 0.9rem;
   flex: 1;
+  text-align: justify;
 }
 
 .repo-card__meta {
@@ -1227,6 +1362,7 @@ a {
   color: var(--gray-600);
   margin: 8px 0 16px;
   font-size: 0.98rem;
+  text-align: justify;
 }
 
 .webinar__meta {
@@ -1247,6 +1383,42 @@ a {
 
 .webinar__meta svg {
   color: var(--signal);
+}
+
+/* read-more + explore buttons */
+.projects__more-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 26px;
+}
+
+.btn--readmore {
+  background: var(--paper-pure);
+  color: var(--ink);
+  border-color: var(--ink);
+}
+
+.btn--readmore:hover {
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 5px 5px 0 var(--signal);
+}
+
+.btn__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 5px;
+  background: var(--signal);
+  color: #fff;
+  border-radius: 999px;
+  font-size: 0.66rem;
+}
+
+.projects__explore {
+  margin-top: 22px;
 }
 
 /* ---------- Posts / Insights ---------- */
@@ -1342,6 +1514,7 @@ a {
   color: var(--gray-600);
   font-size: 0.92rem;
   flex: 1;
+  text-align: justify;
 }
 
 .post__foot {
@@ -1745,7 +1918,7 @@ a.contact__card:hover::before {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   text-align: center;
 }
 
@@ -1755,8 +1928,24 @@ a.contact__card:hover::before {
   gap: 12px;
   font-family: var(--font-head);
   font-weight: 600;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   color: var(--paper);
+}
+
+.footer__tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--signal);
+}
+
+.footer__divider {
+  width: 100%;
+  max-width: 420px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(244, 241, 234, 0.35), transparent);
+  margin: 4px 0;
 }
 
 .footer__links {
@@ -1788,6 +1977,50 @@ a.contact__card:hover::before {
   font-size: 0.72rem;
   letter-spacing: 0.04em;
   color: var(--gray-500);
+}
+
+/* ---------- Scroll to top ---------- */
+.scrolltop {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  color: var(--paper);
+  border: 2px solid var(--ink);
+  border-radius: 0;
+  cursor: pointer;
+  z-index: 90;
+  opacity: 0;
+  transform: translateY(16px) scale(0.9);
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s, box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+
+.scrolltop--show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+.scrolltop:hover {
+  background: var(--signal);
+  border-color: var(--signal);
+  box-shadow: 5px 5px 0 var(--ink);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 560px) {
+  .scrolltop {
+    right: 16px;
+    bottom: 16px;
+    width: 46px;
+    height: 46px;
+  }
 }
 
 /* ---------- Reveal animation ---------- */

@@ -1,12 +1,22 @@
 import { useEffect, useState } from 'react';
 import { useLanguage } from '../i18n/LanguageContext.jsx';
-import { GITHUB_API, GITHUB_URL, GITHUB_USER, LANGUAGE_COLORS } from '../data.js';
-import { GitHubIcon, StarIcon, ForkIcon, ExternalLinkIcon } from './Icons.jsx';
+import { GITHUB_API, GITHUB_URL, GITHUB_URL_2, GITHUB_USER, LANGUAGE_COLORS } from '../data.js';
+import {
+  GitHubIcon,
+  StarIcon,
+  ForkIcon,
+  ExternalLinkIcon,
+  PlusIcon,
+  ArrowRightIcon,
+} from './Icons.jsx';
+
+const INITIAL_COUNT = 6;
 
 export default function Projects() {
   const { t, lang } = useLanguage();
   const [repos, setRepos] = useState([]);
   const [status, setStatus] = useState('loading'); // loading | ready | error
+  const [showAll, setShowAll] = useState(false);
 
   useEffect(() => {
     let cancelled = false;
@@ -79,8 +89,9 @@ export default function Projects() {
         )}
 
         {status === 'ready' && (
+          <>
           <div className="projects__grid">
-            {repos.map((repo) => (
+            {(showAll ? repos : repos.slice(0, INITIAL_COUNT)).map((repo) => (
               <a
                 className="card repo-card"
                 key={repo.id}
@@ -117,6 +128,21 @@ export default function Projects() {
               </a>
             ))}
           </div>
+          {repos.length > INITIAL_COUNT && (
+            <div className="projects__more-wrap">
+              <button className="btn btn--readmore" onClick={() => setShowAll((v) => !v)}>
+                {showAll ? (
+                  t.projects.showLess
+                ) : (
+                  <>
+                    {t.projects.readMore} <PlusIcon />{' '}
+                    <span className="btn__count">{repos.length - INITIAL_COUNT}</span>
+                  </>
+                )}
+              </button>
+            </div>
+          )}
+          </>
         )}
 
         <h3 className="section__subtitle section__subtitle--spaced">{t.projects.moreTitle}</h3>
@@ -127,6 +153,9 @@ export default function Projects() {
             </span>
           ))}
         </div>
+        <a className="btn btn--dark projects__explore" href={GITHUB_URL_2} target="_blank" rel="noreferrer">
+          <GitHubIcon /> {t.projects.exploreMore} <ArrowRightIcon />
+        </a>
       </div>
     </section>
   );

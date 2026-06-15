@@ -13,6 +13,9 @@ export default function Footer() {
           <span className="navbar__logo">SML</span>
           <span>Salar Mokhtari Laleh</span>
         </div>
+
+        <p className="footer__tag">{t.hero.title}</p>
+
         <div className="footer__links">
           <a href={`mailto:${EMAIL}`} aria-label="Email">
             <MailIcon />
@@ -24,8 +27,11 @@ export default function Footer() {
             <LinkedInIcon />
           </a>
         </div>
+
+        <div className="footer__divider" />
+
         <p className="footer__rights">
-          © {year} Salar Mokhtari Laleh. {t.footer.rights} · {t.footer.builtWith} ⚛️
+          © {year} Salar Mokhtari Laleh. {t.footer.rights}
         </p>
       </div>
     </footer>
