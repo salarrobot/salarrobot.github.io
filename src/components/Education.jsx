@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext.jsx';
-import { GraduationCapIcon } from './Icons.jsx';
+import { UNI_LOGOS } from '../data.js';
 
 export default function Education() {
   const { t } = useLanguage();
@@ -9,10 +9,10 @@ export default function Education() {
       <div className="container">
         <h2 className="section__title">{t.education.title}</h2>
         <div className="timeline">
-          {t.education.items.map((item) => (
+          {t.education.items.map((item, i) => (
             <div className="timeline__item" key={item.degree}>
-              <div className="timeline__dot">
-                <GraduationCapIcon />
+              <div className="timeline__dot timeline__dot--logo">
+                <img src={UNI_LOGOS[i]} alt={item.school} />
               </div>
               <div className="card timeline__card">
                 <div className="timeline__head">

@@ -263,6 +263,13 @@ a {
   gap: 60px;
 }
 
+.hero__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
 .hero__badge {
   display: inline-flex;
   align-items: center;
@@ -278,7 +285,6 @@ a {
   letter-spacing: 0.12em;
   text-decoration: none;
   color: var(--paper);
-  margin-bottom: 30px;
   transition: transform 0.18s, box-shadow 0.2s;
 }
 
@@ -287,12 +293,25 @@ a {
   box-shadow: 4px 4px 0 var(--signal);
 }
 
+.hero__badge--phd {
+  background: var(--signal);
+  border-color: var(--signal);
+}
+
+.hero__badge--phd:hover {
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
 .hero__badge-dot {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: var(--signal);
   animation: pulse 2s infinite;
+}
+
+.hero__badge--phd .hero__badge-dot {
+  background: #fff;
 }
 
 @keyframes pulse {
@@ -584,6 +603,50 @@ a {
   box-shadow: var(--shadow-offset);
 }
 
+/* fancy: icon nudge + shine sweep on filled buttons */
+.btn svg {
+  transition: transform 0.2s ease;
+}
+
+.btn:hover svg {
+  transform: scale(1.15);
+}
+
+.btn--dark,
+.btn--cv,
+.btn--primary,
+.btn--light {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn--dark::after,
+.btn--cv::after,
+.btn--primary::after,
+.btn--light::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 55%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+  pointer-events: none;
+}
+
+.btn--dark:hover::after,
+.btn--cv:hover::after,
+.btn--primary:hover::after,
+.btn--light:hover::after {
+  left: 150%;
+}
+
+.hero__actions .btn {
+  padding: 14px 24px;
+}
+
 /* ---------- Sections ---------- */
 .section {
   padding: 100px 0;
@@ -777,13 +840,11 @@ a {
   box-shadow: 5px 5px 0 var(--signal);
 }
 
-.about__erc-dot {
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
-  background: var(--signal);
+.about__erc-logo {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
   flex-shrink: 0;
-  animation: pulse 2s infinite;
 }
 
 .about__erc-link {
@@ -980,6 +1041,17 @@ a {
   justify-content: center;
   flex-shrink: 0;
   z-index: 1;
+}
+
+.timeline__dot--logo {
+  background: #fff;
+  padding: 5px;
+}
+
+.timeline__dot--logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .timeline__card {

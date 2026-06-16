@@ -37,10 +37,16 @@ export default function Hero() {
     <section id="home" className="hero">
       <div className="hero__inner">
         <div className="hero__text">
-          <a href="#contact" className="hero__badge">
-            <span className="hero__badge-dot" />
-            {t.hero.badge}
-          </a>
+          <div className="hero__badges">
+            <a href="#contact" className="hero__badge">
+              <span className="hero__badge-dot" />
+              {t.hero.badge}
+            </a>
+            <a href="#contact" className="hero__badge hero__badge--phd">
+              <span className="hero__badge-dot" />
+              {t.hero.badgePhd}
+            </a>
+          </div>
           <p className="hero__greeting">{t.hero.greeting}</p>
           <h1 className="hero__name">{t.hero.name}</h1>
           <h2 className="hero__title">{t.hero.title}</h2>

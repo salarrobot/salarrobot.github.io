@@ -15,6 +15,7 @@ export const translations = {
     },
     hero: {
       badge: 'Open to Internship Opportunities',
+      badgePhd: 'Looking for a PhD Position',
       greeting: "Hi, I'm",
       name: 'Salar Mokhtari Laleh',
       title: 'M.Sc. Student · RL, Deep RL & Robotics',
@@ -36,9 +37,9 @@ export const translations = {
         'Reinforcement Learning & Deep RL',
         'Robotics',
         'SLAM',
-        'Machine Learning',
+        'Mathematics',
         'Computer Vision',
-        'Large Language Models',
+        'Machine Learning',
       ],
       languagesTitle: 'Languages',
       languages: ['English', 'Azerbaijani', 'Turkish', 'Farsi'],
@@ -323,7 +324,7 @@ export const translations = {
     internship: {
       title: 'Looking for an Internship',
       subtitle:
-        "I'm actively seeking internship positions where I can apply and expand my expertise in AI and Robotics research.",
+        "I'm actively seeking internship and PhD positions where I can apply and expand my expertise in AI and Robotics research.",
       areas: [
         {
           icon: '🎮',
@@ -376,6 +377,7 @@ export const translations = {
     },
     hero: {
       badge: 'Staj Fırsatlarına Açığım',
+      badgePhd: 'Doktora Pozisyonu Arıyorum',
       greeting: 'Merhaba, ben',
       name: 'Salar Mokhtari Laleh',
       title: 'Yüksek Lisans Öğrencisi · RL, Derin RL ve Robotik',
@@ -397,9 +399,9 @@ export const translations = {
         'Pekiştirmeli Öğrenme ve Derin RL',
         'Robotik',
         'SLAM',
-        'Makine Öğrenmesi',
+        'Matematik',
         'Bilgisayarlı Görü',
-        'Büyük Dil Modelleri',
+        'Makine Öğrenmesi',
       ],
       languagesTitle: 'Diller',
       languages: ['İngilizce', 'Azerice', 'Türkçe', 'Farsça'],
@@ -684,7 +686,7 @@ export const translations = {
     internship: {
       title: 'Staj Arıyorum',
       subtitle:
-        'Yapay zeka ve robotik araştırmalarındaki uzmanlığımı uygulayıp geliştirebileceğim staj pozisyonlarını aktif olarak arıyorum.',
+        'Yapay zeka ve robotik araştırmalarındaki uzmanlığımı uygulayıp geliştirebileceğim staj ve doktora pozisyonlarını aktif olarak arıyorum.',
       areas: [
         {
           icon: '🎮',

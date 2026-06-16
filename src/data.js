@@ -6,6 +6,9 @@ export const LINKEDIN_URL = 'https://www.linkedin.com/in/salar-mokhtari-laleh-22
 export const ERC_URL = 'https://www.ntnuerc.com/current/current';
 export const CV_URL = '/Salar_Mokhtari_Laleh_CV.pdf';
 export const EMAIL = 'Salarmokhtari0@gmail.com';
+export const NTNU_LOGO = '/uni-ntnu.png';
+// University logos by Education entry order: [M.Sc. NTNU, B.Sc. Tabriz]
+export const UNI_LOGOS = ['/uni-ntnu.png', '/uni-tabriz.png'];
 
 export const LANGUAGE_COLORS = {
   Python: '#3572A5',

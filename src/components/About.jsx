@@ -1,5 +1,5 @@
 import { useLanguage } from '../i18n/LanguageContext.jsx';
-import { ERC_URL } from '../data.js';
+import { ERC_URL, NTNU_LOGO } from '../data.js';
 import { GlobeIcon, ExternalLinkIcon } from './Icons.jsx';
 import { LangFlag } from './Flags.jsx';
 
@@ -14,7 +14,7 @@ export default function About() {
           <p className="about__bio">{t.about.bio}</p>
 
           <a className="about__erc" href={ERC_URL} target="_blank" rel="noreferrer">
-            <span className="about__erc-dot" />
+            <img className="about__erc-logo" src={NTNU_LOGO} alt="NTNU" />
             {t.about.affiliation}
             <span className="about__erc-link">
               {t.about.ercLink} <ExternalLinkIcon />
