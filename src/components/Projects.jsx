@@ -50,6 +50,9 @@ export default function Projects() {
       day: 'numeric',
     });
 
+  const truncate = (text, n = 80) =>
+    text && text.length > n ? `${text.slice(0, n).trimEnd()}...` : text;
+
   return (
     <section id="projects" className="section section--alt">
       <div className="container">
@@ -104,7 +107,9 @@ export default function Projects() {
                   <h3 className="repo-card__name">{repo.name}</h3>
                   <ExternalLinkIcon className="repo-card__ext" />
                 </div>
-                <p className="repo-card__desc">{repo.description || t.projects.noDesc}</p>
+                <p className="repo-card__desc">
+                  {repo.description ? truncate(repo.description) : t.projects.noDesc}
+                </p>
                 <div className="repo-card__meta">
                   {repo.language && (
                     <span className="repo-card__lang">

@@ -56,14 +56,13 @@ export const translations = {
           details: [
             'Supervisor: Dr. Saeed Saeedvand',
             'Thesis: RL and Deep RL on Humanoid Robotics',
-            'GPA: 3.46 (first semester)',
           ],
         },
         {
           degree: 'B.Sc. in Computer Engineering',
           school: 'University of Tabriz',
           period: '2018 – 2023',
-          details: ['GPA: 15.02 / 20'],
+          details: [],
         },
       ],
     },
@@ -418,14 +417,13 @@ export const translations = {
           details: [
             'Danışman: Dr. Saeed Saeedvand',
             'Tez: İnsansı Robotikte RL ve Derin RL',
-            'Not Ortalaması: 3.46 (ilk dönem)',
           ],
         },
         {
           degree: 'Bilgisayar Mühendisliği — Lisans (B.Sc.)',
           school: 'Tebriz Üniversitesi',
           period: '2018 – 2023',
-          details: ['Not Ortalaması: 15.02 / 20'],
+          details: [],
         },
       ],
     },

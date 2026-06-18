@@ -18,7 +18,7 @@ export default function Posts() {
         </div>
 
         <div className="posts__grid">
-          {t.posts.items.map((post) => (
+          {t.posts.items.slice(0, 3).map((post) => (
             <a
               className="card post__card"
               key={post.title}

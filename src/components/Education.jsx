@@ -20,11 +20,13 @@ export default function Education() {
                   <span className="badge badge--period">{item.period}</span>
                 </div>
                 <p className="timeline__org">{item.school}</p>
-                <ul className="timeline__points">
-                  {item.details.map((d) => (
-                    <li key={d}>{d}</li>
-                  ))}
-                </ul>
+                {item.details.length > 0 && (
+                  <ul className="timeline__points">
+                    {item.details.map((d) => (
+                      <li key={d}>{d}</li>
+                    ))}
+                  </ul>
+                )}
               </div>
             </div>
           ))}
